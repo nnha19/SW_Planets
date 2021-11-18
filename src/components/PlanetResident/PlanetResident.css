@@ -27,12 +27,12 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem 2rem;
   align-items: center;
-}
-.residents__header h2 {
-  text-transform: capitalize;
   position: sticky;
   top: 0;
   background-color: white;
+}
+.residents__header h2 {
+  text-transform: capitalize;
 }
 
 .residents__header i {
