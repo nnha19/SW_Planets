@@ -1,0 +1,78 @@
+.planets {
+  width: 60%;
+  height: 70vh;
+  margin: 3rem auto;
+  overflow-y: auto;
+  border-bottom: 2px solid var(--primary-color);
+}
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  overflow-y: auto;
+  width: 100%;
+}
+
+.content-table thead tr {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.resident-btn {
+  background-color: var(--primary-color);
+  color: white;
+  width: 4rem;
+  height: 2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.resident-btn:hover {
+  background-color: #00987aa8;
+}
+.resident-btn i {
+  margin-left: 0.5rem;
+}
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .planets {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .planets {
+    width: 90%;
+  }
+}
